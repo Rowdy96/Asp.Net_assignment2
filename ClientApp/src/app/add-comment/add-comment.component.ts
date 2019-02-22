@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from '_debugger';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-
+import { Message } from '_debugger';
 @Component({
   selector: 'app-add-comment',
   templateUrl: './add-comment.component.html',
@@ -10,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AddCommentComponent implements OnInit {
 
-  Id: number;
+  Id: number=0;
   constructor(private route: ActivatedRoute, private router: Router, private httpService: HttpClient) {
 
     if (this.route.snapshot.params['id']) {
