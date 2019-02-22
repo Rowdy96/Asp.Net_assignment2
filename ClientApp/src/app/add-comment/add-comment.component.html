@@ -1,0 +1,13 @@
+<p>
+  add-comment works!
+</p>
+<div class="panel">
+  <div class="panel-heading"></div>
+  <div class="panel-body">
+    <label>Comment</label>
+    <textarea class="form-control" name="Comment" [(ngModel)]="message.Comment"></textarea>
+  </div>
+  <div class="panel-footer">
+    <button (click)="addcomment(message.comment)" class="btn btn-primary" >Add Comment</button>
+  </div>
+</div>
